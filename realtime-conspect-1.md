@@ -53,11 +53,11 @@ R3 подключён к внешней сети.  Предположим, чт�
 Каждый роутер знает обо всех роутерах в сети. Это создаёт повышенную нагрузку на сеть. Хотелось бы иметь протокол, в котором каждый роутер знает только о соседях, при этом
 были хорошие метрики стоимости маршрута. Возможное решение -- `EIGRP`.
 
-## [`EIGRP` - Enhanced Interior Gateway Routing Protocol](https://en.wikipedia.org/wiki/Enhanced_Interior_Gateway_Routing_Protocol)
+## [EIGRP - Enhanced Interior Gateway Routing Protocol](https://en.wikipedia.org/wiki/Enhanced_Interior_Gateway_Routing_Protocol)
 
 Придуман в `CISCO`, использовался в их внутренних сетях. Не очень популярен, в основном, работает на роутерах `CISCO`. Сложен в объяснении.
 
-# [`BGP` - Border Gateway Protocol](https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/26634-bgp-toc.html)
+# [BGP - Border Gateway Protocol](https://www.cisco.com/c/en/us/support/docs/ip/border-gateway-protocol-bgp/26634-bgp-toc.html)
 
 До этого ввсе рассматриваемые нами протоколы были `Internal Gateway Protocol`, они заточены под сети, в которых известна топология.
 
@@ -73,7 +73,7 @@ R3 подключён к внешней сети.  Предположим, чт�
 `Path` -- все `AS ID`, через которые придётся пройти.
 
 
-#### Типы сообщений `BGP`
+#### Типы сообщений BGP
 
 * `Open` -- Установка соседства. Cоседи отправляют друг другу всю свою таблицу. "The OPEN message is used to establish a BGP adjacency. Both sides negotiate session capabilities before a BGP peering establishes. The OPEN message contains the BGP version number, ASN of the originating router, Hold Time, BGP Identifier, and other optional parameters that establish the session capabilities."
 * `Keepalive` -- "я ещё живой и работаю" (BGP does not rely on the TCP connection state to ensure that the neighbors are still alive. Keepalive messages are exchanged every one-third of the Hold Timer agreed upon between the two BGP routers. Cisco devices have a default Hold Time of 180 seconds, so the default Keepalive interval is 60 seconds. If the Hold Time is set for zero, no Keepalive messages are sent between the BGP neighbors.)
@@ -81,7 +81,7 @@ R3 подключён к внешней сети.  Предположим, чт�
 * `Notification` --  "Indicates an error condition to a BGP neighbor"
 * `Route Refresh` -- [ошибки](https://www.inetdaemon.com/tutorials/internet/ip/routing/bgp/operation/messages/notification.shtml#:~:text=NOTIFICATION%20messages%20are%20used%20to,send%20an%20update%20or%20keepalive)
 
-#### [Состояния `BGP`](https://networklessons.com/bgp/bgp-neighbor-adjacency-states)
+#### [Состояния BGP](https://networklessons.com/bgp/bgp-neighbor-adjacency-states)
 * `Idle` -- ожидание стартового события (прихода нового роутера с `BGP`)
 * `Connect` -- ожидание трёхэтапного `TCP` рукопожатия, из этого состояния переходим в `OpenSent`
 * `Active` -- попробуем другое `TCP` рукопожатие для общения с `BGP` соседом
