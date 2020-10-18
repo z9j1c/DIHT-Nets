@@ -2,7 +2,7 @@
 
 Имеем сеть из роутеров `r1`, `r2` и клиентских машин `pc1` и `pc2`.
 
-![Static route demo](./net_route_net.png)
+![Static route demo](static_route_net.png)
 
 #### Настройка статической маршрутизации
 
