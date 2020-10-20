@@ -27,7 +27,7 @@ R1# wr mem
 R2# conf t
 R2# int fa0/1
 R2# ip address 192.168.20.1 255.255.255.0
-R2# no shutdowns
+R2# no shutdown
 R2#
 R2# int fa0/0
 R2# ip address 172.16.0.2 255.255.255.0
