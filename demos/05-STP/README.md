@@ -17,6 +17,8 @@
 
 ### STP demo
 
+![Net topology](topology.png)
+
 PC-1:
 
 ```
