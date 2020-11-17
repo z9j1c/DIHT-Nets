@@ -22,4 +22,4 @@
 10. Качаем образа роутеров `c3745` и `c7200` (ищи ссылку в презентации), ставим каждый из них в GNS3: Preferences > IOS Routers > New > "Run ... on GNS3 VM".
 Проходим по цепочке next'ов, при появлении, жмём Idle-PC finder и соглашаемся с тем, что он нам предложит.
 
-[Breathtaking](windows/breathtaking.png)
+![Breathtaking](windows/breathtaking.png)
