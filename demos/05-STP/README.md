@@ -10,10 +10,11 @@
 
 ![Interfaces](interfaces.png)
 
-### Добаввление IOSwitch для любителей
+### Добавление IOSwitch для любителей
 
-1. Качаем [ссылочке](https://drive.google.com/file/d/0B-v2VUXWowDLN1NYUFFQTWkyNW8/view)
-2. 
+1. Качаем по [ссылочке](https://drive.google.com/file/d/0B-v2VUXWowDLN1NYUFFQTWkyNW8/view) `i86bi-linux-l2-adventerprisek9-15.1.bin`
+2. [Тут](https://www.systemconf.com/2019/01/03/generate-cisco-iourc-license-key-on-gns3-vm-using-python-3/) разбираемся, как добавить лицензию на IOS on Unix в GNS3
+3. В IOS Devices добавляем новый свич, называем его, как хотим
 
 ### STP demo
 
@@ -54,4 +55,10 @@ no spanning-tree vlan 1
 spanning-tree vlan 1 cost 3
 ```
 
+Или же изменение стоимости на определённом интерфейсе:
+
+```
+int po1
+spanning-tree cost 1000
+```
  
